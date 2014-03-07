@@ -1,10 +1,10 @@
-<%= text('外婆家等座位排号单', :font_size => FONT_MIDDLE, :align_type => ALIGN_C) %>
+<%= text('外婆家等位排号单', :font_size => FONT_BIG, :align_type => ALIGN_C) %>
 <%= single_splitline %>
-<%= table([["手机号码:13913850894", "领号门店:南京外婆家新街口店"], ["领号市别:晚市", "就餐人数:#{rand(1..4)}"]]) { |t| t.config([16]); } %>
+<%= table([["手机号码:13913850894", "领号门店:南京外婆家新街口店"], ["领号市别:晚市", "就餐人数:#{rand(4)}"]]) { |t| t.config([20]); } %>
 <%= text('领号日期:2014-03-07', :align_type => ALIGN_L) %>
 <%= single_splitline %>
-<%= text("中桌A1#{rand(1..100)}号", :font_size => FONT_BIG, :align_type => ALIGN_C) %>
-<%= text("您之前还有 #{rand(1..100)} 桌客人在等候", :align_type => ALIGN_L) %>
+<%= text("中桌A1#{rand(100)}号", :font_size => FONT_BIG, :align_type => ALIGN_C) %>
+<%= text("您之前还有 #{rand(100)} 桌客人在等候", :align_type => ALIGN_L) %>
 <%= single_splitline %>
 <%= text("*打印时间:#{Time.now.strftime('%F %T')}*", :align_type => ALIGN_L) %>
 <%= text("*听到叫号请到迎宾台，过号不作废，根据迎宾台已叫到号延迟五桌安排*", :align_type => ALIGN_L) %>
