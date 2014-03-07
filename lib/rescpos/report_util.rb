@@ -1,6 +1,7 @@
 module Rescpos
   module ReportUtil
     FONT_NORMAL = "\x00"
+    FONT_MIDDLE = "\x05"
     FONT_BIG = "\x11"
     ALIGN_C = "\x01"
     ALIGN_L = "\x00"
