@@ -32,6 +32,10 @@ module Rescpos
       formatted_text << align(options[:align_type]) if options[:align_type]
       formatted_text << txt if txt
     end
+
+    def barcode(text)
+      "\x1D\x68\x50\x1D\x6B\x02#{text}\x00\x0A" #必须8位
+    end
     
     def fontsize(size)
       "\x1d\x21" << size.to_s
