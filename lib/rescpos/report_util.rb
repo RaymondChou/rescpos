@@ -7,11 +7,11 @@ module Rescpos
     ALIGN_R = "\x02"
 
     def single_splitline
-      text("-" * 42, :font_size => FONT_NORMAL)
+      text("-" * 32, :font_size => FONT_NORMAL)
     end
 
     def double_splitline
-      text("=" * 42, :font_size => FONT_NORMAL)
+      text("=" * 32, :font_size => FONT_NORMAL)
     end
 
     def underline(number)
