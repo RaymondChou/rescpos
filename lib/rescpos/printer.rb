@@ -34,11 +34,13 @@ module Rescpos
     end
     
     def partial_cut
-      send_command("\n\n\n\n\x1d\x561\x0c")
+      #send_command("\n\n\n\n\x1d\x561\x0c")
+      send_command("\n\n\n\n\x1D\x56\x41\x01")
     end
 
     def full_cut
-      send_command("\n\n\n\n\x1b\x69\x0c")
+      #send_command("\n\n\n\n\x1b\x69\x0c")
+      send_command("\n\n\n\n\x1D\x56\x41\x01")
     end
   end
 end
