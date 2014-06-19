@@ -6,8 +6,8 @@ require 'rescpos'
 class ConsumerCodeReport < Rescpos::Report
   attr_reader :group, :bill_items
 
-  def initialize
-    @code = 41874225
-    @group = 103
+  def initialize(group, code)
+    @code = code
+    @group = group
   end
 end
